@@ -374,18 +374,18 @@ def main():
             )
             chon2 = int(input("Select: "))
             if chon2 == 1:
-                data = input("Input: ")
+                data = input("Input (without space): ")
                 res = ceasar_encode(data)
-                print("Output: ", res)
+                print("Output: '", res, "'", sep = '')
             elif chon2 == 2:
-                data = input("Input: ")
+                data = input("Input (without space): ")
                 res = ceasar_decode(data)
-                print("Output: ", res)
+                print("Output: '", res, "'", sep = '')
             elif chon2 == 3:
-                data = input("Input: ")
+                data = input("Input (without space): ")
                 res = []
                 res = brute_force_ceasar(data)
-                print("Output: ", res)
+                print("Output: '", res, "'", sep = '')
         elif chon == 2:
             print(
                 """Select:
@@ -395,13 +395,13 @@ def main():
             )
             chon2 = int(input("Select: "))
             if chon2 == 1:
-                data = input("Input: ")
+                data = input("Input (without space): ")
                 res = str_to_bin(data)
-                print("Output: ", res)
+                print("Output: '", res, "'", sep = '')
             elif chon2 == 2:
-                data = input("Input: ")
+                data = input("Input (without space): ")
                 res = bin_to_str(data)
-                print("Output: ", res)
+                print("Output: '", res, "'", sep = '')
 
         elif chon == 3:
             print(
@@ -413,13 +413,13 @@ def main():
             )
             chon2 = int(input("Select: "))
             if chon2 == 1:
-                data = input("Input: ")
+                data = input("Input (without space): ")
                 res = str_to_dec(data)
-                print("Output: ", res)
+                print("Output: '", res, "'", sep = '')
             elif chon2 == 2:
-                data = input("Input: ")
+                data = input("Input (without space): ")
                 res = dec_to_str(data)
-                print("Output: ", res)
+                print("Output: '", res, "'", sep = '')
         elif chon == 4:
             print(
                 """Select:
@@ -430,25 +430,25 @@ def main():
             )
             chon2 = int(input("Select: "))
             if chon2 == 1:
-                data = input("Input: ")
+                data = input("Input (without space): ")
                 res = encode_b64(data)
-                print("Output: ", res)
+                print("Output: '", res, "'", sep = '')
             elif chon2 == 2:
-                data = input("Input: ")
+                data = input("Input (without space): ")
                 res = decode_b64(data)
-                print("Output: ", res)
+                print("Output: '", res, "'", sep = '')
 
         elif chon == 5:
-            data = input("Input: ")
+            data = input("Input (without space): ")
 
             res = md5sum(data.encode())
-            print("Output: ", res)
+            print("Output: '", res, "'", sep = '')
 
         elif chon == 6:
-            data1 = input("First input: ")
-            data2 = input("Second input: ")
+            data1 = input("First input (without space): ")
+            data2 = input("Second input (without space): ")
             res = xor(data1.encode(), data2.encode())
-            print("Output: ", res)
+            print("Output: '", res, "'", sep = '')
             pass
 
 
